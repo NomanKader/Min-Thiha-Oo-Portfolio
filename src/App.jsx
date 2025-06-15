@@ -1,16 +1,28 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
 import './App.css'
 
+function FadeTransition({ children }) {
+  const [key, setKey] = useState(0)
+
+  useEffect(() => {
+    setKey(prev => prev + 1)
+  }, [children])
+
+  return (
+    <div key={key} className="fade-enter">
+      {children}
+    </div>
+  )
+}
+
 function App() {
-  const [activeLink, setActiveLink] = useState('/') // Set initial active link to Home's path
+  const [activeLink, setActiveLink] = useState('/')
   const location = useLocation()
 
-  // Update activeLink state based on current location to handle direct URL access
-  // This effect ensures the correct link is highlighted on initial load and manual URL changes
-  useState(() => {
+  useEffect(() => {
     setActiveLink(location.pathname)
   }, [location.pathname])
 
@@ -127,11 +139,13 @@ function App() {
 
       {/* Right Main Content (Routes) */}
       <div className="flex-1 bg-white">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          {/* Add more routes for other pages here */}
-        </Routes>
+        <FadeTransition>
+          <Routes location={location}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            {/* Add more routes for other pages here */}
+          </Routes>
+        </FadeTransition>
       </div>
     </div>
   )
