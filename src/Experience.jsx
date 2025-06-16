@@ -15,7 +15,7 @@ function Experience() {
               <svg className="w-8 h-8 text-[#6da0cf] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-1.282-8.454-3.528m16.89 0c.34-.412.637-.872.89-1.378m-16.89 0c-.34.412-.637.872-.89 1.378m0 0V5.992m0 5.263V18.27M12 8.25V18.27m0-10.017C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253m9 0c1.168-.776 2.754-1.253 4.5-1.253 1.746 0 3.332.477 4.5 1.253m-4.5 0v13m-9-13v13" /></svg>
               <h3 className="font-bold text-gray-800 text-xl font-['Playfair_Display']">Director of Web Operations</h3>
             </div>
-            <p className="text-sm leading-snug tracking-wide text-gray-600 text-opacity-100">Digicel Accel Inc. | Tokyo, Japan - Remote | February 2022 – December 2023</p>
+            <p className="text-sm leading-snug tracking-wide text-gray-600 text-opacity-100">Digital Accels Inc. | Tokyo, Japan - Remote | February 2022 – December 2023</p>
             <ul className="text-gray-600 space-y-2 mt-2 list-disc pl-5">
               <li>Directed cross-functional teams to design and deploy market-entry analytics projects for U.S./European firms entering Japan and ASEAN markets, resulting in a 25% increase in market penetration.</li>
               <li>Conducted in-depth market research and analysis, leveraging both qualitative and quantitative data to gather insights into customer preferences, behaviors, and emerging market trends, driving informed decision-making and a 15% improvement in strategic planning.</li>
