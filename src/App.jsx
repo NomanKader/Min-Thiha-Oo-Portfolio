@@ -65,7 +65,7 @@ function App() {
       <aside 
         className={`fixed inset-y-0 left-0 z-40 w-full bg-[#f3f4f8] shadow-lg p-6 flex flex-col justify-between items-center text-center transition-transform duration-300 ease-in-out
           ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
-          md:relative md:translate-x-0 md:w-72 md:flex
+          md:translate-x-0 md:w-72 md:flex
         `}
       >
         <div>
@@ -147,7 +147,7 @@ function App() {
         ></div>
       )}
 
-      <div className="flex-1 bg-white">
+      <div className="flex-1 bg-white md:ml-72">
         <FadeTransition>
           <Routes location={location}>
             <Route path="/" element={<Home />} />

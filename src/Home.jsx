@@ -99,6 +99,49 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* Skills and Experience Sections Side-by-Side */}
+      <div className="flex flex-col md:flex-row gap-8 mt-16">
+        <section className="flex-1 py-10 lg:py-12 text-center bg-gradient-to-r from-[#f0f8ff] to-[#e6f2ff] rounded-lg shadow-sm">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center space-y-4">
+            <div className="flex-shrink-0">
+              {/* Icon for Skills: Lightbulb (Removed) */}
+            </div>
+            <div className="text-center">
+              <h2 className="text-3xl font-bold text-gray-800 mb-2 font-['Playfair_Display']">My Expertise: Skills</h2>
+              <p className="text-md text-gray-700 mb-4 max-w-md mx-auto">
+                Discover my core technical and soft skills, from data analysis and machine learning to project management and digital marketing.
+              </p>
+              <Link 
+                to="/skills" 
+                className="inline-block px-6 py-3 bg-[#6da0cf] text-white text-sm font-semibold uppercase tracking-wider rounded-full hover:bg-[#4a7ca8] transition-all duration-300 shadow-sm transform hover:scale-102"
+              >
+                Explore My Skills <span className="ml-1">&#x2192;</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="flex-1 py-10 lg:py-12 text-center bg-gradient-to-r from-[#f0f8ff] to-[#e6f2ff] rounded-lg shadow-sm">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center space-y-4">
+            <div className="flex-shrink-0">
+              {/* Icon for Experience: Briefcase (Removed) */}
+            </div>
+            <div className="text-center">
+              <h2 className="text-3xl font-bold text-gray-800 mb-2 font-['Playfair_Display']">My Professional Journey: Experience</h2>
+              <p className="text-md text-gray-700 mb-4 max-w-md mx-auto">
+                A comprehensive overview of my career milestones, key roles, and impactful projects across diverse industries.
+              </p>
+              <Link 
+                to="/experience" 
+                className="inline-block px-6 py-3 bg-[#6da0cf] text-white text-sm font-semibold uppercase tracking-wider rounded-full hover:bg-[#4a7ca8] transition-all duration-300 shadow-sm transform hover:scale-102"
+              >
+                Discover My Experience <span className="ml-1">&#x2192;</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
   )
 }
